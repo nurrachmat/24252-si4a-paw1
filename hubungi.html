@@ -7,5 +7,25 @@
 </head>
 <body>
     <h1>Hubungi Kami</h1>
+
+    <form action="proses.php" method="post">
+        Nama Lengkap <br>
+        <input type="text" name="nama" id="nama" required> <br>
+        Tanggal Lahir <br>
+        <input type="date" name="tanggallahir" id="tanggallahir"> <br>
+        Jenis Kelamin <br>
+        <input type="radio" name="jk" id="jkl" value="L" checked> Laki-laki <br>
+        <input type="radio" name="jk" id="jkp" value="P"> Perempuan <br>
+        Tempat Lahir <br>
+        <select name="tempatlahir" id="tempatlahir">
+            <option value="PLB">Palembang</option>
+            <option value="JKT">Jakarta</option>
+        </select> <br>
+        Pesan <br>
+        <textarea name="pesan" id="pesan"></textarea> <br>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.445792861902!2d104.7614672748971!3d-2.9737135970023965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b766d8211462f%3A0xcc95d97476bf2dd8!2sUniversitas%20Multi%20Data%20Palembang!5e0!3m2!1sid!2sid!4v1740381347192!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
 </html>
