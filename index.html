@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar HTML</title>
+    <!-- internal CSS -->
+    <style>
+        /* element selector */
+        body {
+            background-color: #80CBC4;
+            font-family: arial ;
+        }
+
+        p {
+            color: yellow;
+        }
+
+        h1, h2, h3 {
+            color: green;
+        }
+        /* class selector */
+        .bg-warning {
+            background-color: yellow;
+        }
+
+        .text-success {
+            color: green;
+        }
+
+        /* id selector */
+        #h5 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <h1>Selamat datang</h1>
+    <!-- inline CSS -->
+    <h1 style="color: blue; text-align: center;">Selamat datang</h1>
     <p>Hari ini belajar VCS Git dan Github, serta deploy ke vercel</p>
     <p>Hari ini belajar HTML</p>
     <!-- ini komentar -->
@@ -16,8 +46,8 @@
     <h1>Judul</h1>
     <h2>Judul</h2>
     <h3>Judul</h3>
-    <h4>Judul</h4>
-    <h5>Judul</h5>
+    <h4 class="bg-warning text-success">Judul</h4>
+    <h5 id="h5">Judul</h5>
     <h6>Judul</h6>
 
     <!-- order list -->

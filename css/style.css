@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+/* element selector */
+body {
+    background-color: #80CBC4;
+    font-family: arial ;
+}
+
+p {
+    color: yellow;
+}
+
+h1, h2, h3 {
+    color: green;
+}
+/* class selector */
+.bg-warning {
+    background-color: yellow;
+}
+
+.text-success {
+    color: green;
+}
+
+/* id selector */
+#h5 {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+/* form */
+input[type="text"], input[type="date"], textarea, select {
+    width: 100%;
+    border-radius: 10px; /* sudut border */
+    padding: 5px; /* sisi dalam border */
+    border: 1px dashed green; /* solid, dashed, dotted */
+    /* margin: 20px; sisi luar border */
+}
+
+button {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
