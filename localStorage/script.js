@@ -47,9 +47,16 @@ function tampil(){
 
         daftar_tamu.innerHTML += `<div class='col-lg-2 rounded text-center text-white ${item.jk == 'L' ? 'bg-success' : 'bg-warning' } p-3 m-1'>
             <h4>${item.nama_pengunjung}</h4>
-            ${item.perlu} <br> ${item.jk}
+            ${item.perlu} <br> ${item.jk == 'L' ? 'Laki-laki' : 'Perempuan'}
         </div>`
     })
     document.getElementById('tamu_laki').innerHTML = `<h2>Tamu laki-laki <br> ${total_laki}</h2>`;
     document.getElementById('tamu_perempuan').innerHTML = `<h2>Tamu perempuan <br> ${total_perempuan}</h2>`;
+
+    console.log(data.filter( (keperluan) => keperluan.perlu == 'Membaca' ).length);
+    
+    document.getElementById('membaca').innerHTML = `<h2>Membaca <br> ${data.filter( (keperluan) => keperluan.perlu == 'Membaca' ).length}</h2>`;
+    document.getElementById('browsing').innerHTML = `<h2>Browsing <br> ${data.filter( (keperluan) => keperluan.perlu == 'Browsing' ).length}</h2>`;
+    document.getElementById('pinjam_buku').innerHTML = `<h2>Pinjam Buku <br> ${data.filter( (keperluan) => keperluan.perlu == 'Pinjam Buku' ).length}</h2>`;
+    
 }
